@@ -1,0 +1,67 @@
+.bannerCard {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+
+    a {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    a::before,
+    a::after {
+        background: rgba(255, 255, 255, .4) none repeat scroll 0 0;
+        content: " ";
+        height: 0;
+        padding: 0;
+        position: absolute;
+        transition: all 0.5s ease-out 0s;
+        -webkit-transition: all 0.5s ease-out 0s;
+        -moz-transition: all 0.5s ease-out 0s;
+        -ms-transition: all 0.5s ease-out 0s;
+        -o-transition: all 0.5s ease-out 0s;
+        width: 0;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        z-index: 1;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -khtml-border-radius: 5px;
+        -moz-border-radius: 5px;
+    }
+
+    a::before {
+        left: 0;
+        top: 0;
+    }
+
+    a::after {
+        bottom: 0;
+        right: 0;
+    }
+
+    &:hover a::before,
+    &:hover a::after {
+        height: 100%;
+        width: 100%;
+        transform: rotatex(-180deg);
+        -webkit-transform: rotatex(-180deg);
+        -moz-transform: rotatex(-180deg);
+        -ms-transform: rotatex(-180deg);
+        -o-transform: rotatex(-180deg);
+        opacity: 0;
+    }
+}

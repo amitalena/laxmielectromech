@@ -1,0 +1,101 @@
+:root {
+    /* --main-color: #c3c1b8; */
+    --main-color: #6b7280;
+}
+
+.service-area {
+    background: radial-gradient(white, rgba(255, 255, 255, 0.562));
+}
+
+.service-img {
+    margin-top: 30px;
+}
+
+.service-item {
+    width: 100%;
+    height: auto;
+    border: 2px solid #9e9e9e;
+    border-radius: 15px;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 60px 25px 30px; */
+    margin-top: 55px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-icon {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 1.2px;
+    text-align: center;
+}
+
+.service-item img,
+.service-item .icon {
+
+    background-color: var(--main-color);
+    border-radius: 50%;
+    top: 20px;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.service-item:hover {
+    /* background-color: #c3c1b8; */
+    /* background-color: var(--main-color); */
+    background-color: #dbdbdb;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.service-icon:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    top: 45%;
+    left: 30%;
+    border-bottom: 2px solid #9e9e9e;
+    background-color: #fff;
+    -webkit-transform: rotate(26deg);
+    -moz-transform: rotate(26deg);
+    -ms-transform: rotate(26deg);
+    -o-transform: rotate(26deg);
+    transform: rotate(26deg);
+}
+
+.service-icon:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    top: 45%;
+    right: 30%;
+    border-bottom: 2px solid #9e9e9e;
+    background-color: #fff;
+    -webkit-transform: rotate(-26deg);
+    -moz-transform: rotate(-26deg);
+    -ms-transform: rotate(-26deg);
+    -o-transform: rotate(-26deg);
+    transform: rotate(-26deg);
+}
