@@ -229,7 +229,7 @@ const Footer = () => {
                         <Typography variant="body2">
                             © {new Date().getFullYear()} <strong>Laxmi Electromech</strong>. All Rights Reserved.
                         </Typography>
-                        <Typography variant='body2'>Designed & Developed by <a href='https://www.jaikviktechnology.com/' target="_blank" className='hover:underline'>Jaikvik Technology India Pvt. Ltd.</a></Typography>
+                        <Typography variant='body2'>Designed & Developed by <a href='https://www.spiralehrsolutions.com/' target="_blank" className='hover:underline'>Spirale HR solutions Pvt. Ltd.</a></Typography>
                     </Box>
                 </Box>
             </Box>
